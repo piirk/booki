@@ -22,8 +22,8 @@
                     <a href="#"><img src="images/logo/Booki.png" alt="Booki"></a>
                 </div>
                 <div class="nav">
-                    <a href="#">Hébergements</a>
-                    <a href="#">Activités</a>
+                    <a href="#hebergements">Hébergements</a>
+                    <a href="#activities">Activités</a>
                 </div>
             </div>
         </header>
@@ -33,16 +33,24 @@
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
+
+                <form action="#">
                 <div class="search-bar">
-                    <form action="#">
-                        <label for="search-text" class="search-label fa-solid fa-location-dot"></label>
-                        <input type="text" id="search-text" class="search-input" placeholder="Marseille, France">
-                        <button type="submit" name="research" class="search-button">
-                            <span class="search-submit-text">Rechercher</span>
-                            <span class="search-submit-logo fa-solid fa-magnifying-glass"></span>
-                        </button>
-                    </form>
-                </div>
+                        <div class="search-label">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="search-input">
+                            <input type="text" id="search-text" placeholder="Marseille, France">
+                        </div>
+                        <div class="search-button">
+                            <button type="submit" name="research">
+                                <span class="search-submit-text">Rechercher</span>
+                                <span class="search-submit-logo fa-solid fa-magnifying-glass"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
                 <div class="filters">
                     <h2>Filtres</h2>
                     <ul>
@@ -57,7 +65,7 @@
                 </div>
             </div>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
@@ -181,7 +189,7 @@
                         <a href="#"><h3>Afficher plus</h3></a>
                     </div>
                 </section>
-                <section class="populaires">
+                <section class="populaires" id="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -247,7 +255,7 @@
                     </div>
                 </section>
             </div>
-            <div class="activities">
+            <div class="activities" id="activities">
                 <div class="activities-title">
                     <h2 class="section-title">Activités à Marseille</h2>
                 </div>
