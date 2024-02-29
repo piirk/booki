@@ -392,12 +392,15 @@ nav a:hover {
 }
 
 .activities-cards .card-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
     box-sizing: border-box;
     padding: 0 20px;
 }
 
 .activities-cards .card-title {
-    margin: 19px 0;
+    margin: 20px 0;
 }
 
 /****** footer ******/
@@ -466,7 +469,7 @@ footer h3 {
         height: 200px;
     }
     .activities-cards .card-title {
-        margin: 25.5px 0;
+        margin: 16px 0;
     }
 }
 
@@ -610,7 +613,7 @@ footer h3 {
     }
 
     .activities-cards .card-title {
-        margin-top: 20px;
+        margin: 20px 0;
     }
 
     /****** footer ******/
