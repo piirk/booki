@@ -42,7 +42,34 @@ a {
     font-size: 22px;
 }
 
+.flex {
+    display: flex;
+    flex: 1;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px 0;
+}
+
+.cards article, .cards figure {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.cards .card-vertical {
+    flex-direction: row;
+}
+
 .card {
+    display: flex;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -55,6 +82,14 @@ a {
 
 .card-title {
     font-size: 16px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+}
+
+.card-rating {
+    gap: 2px;
 }
 
 .euro {
@@ -176,7 +211,6 @@ nav a:hover {
     display: flex;
     padding: 0;
     gap: 15px;
-    margin: 0;
 }
 
 .filters li {
@@ -222,7 +256,6 @@ nav a:hover {
 .infobar p {
     display: flex;
     align-items: center;
-    margin: 0;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -232,6 +265,9 @@ nav a:hover {
 }
 
 .hebergements-and-populaires section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -248,16 +284,8 @@ nav a:hover {
     align-items: center;
 }
 
-.hebergements-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .hebergements-cards .card {
-    display: flex;
     flex-direction: column;
-    margin-top: 33px;
     width: 30%;
 }
 
@@ -271,7 +299,9 @@ nav a:hover {
 
 .hebergements-cards .card-content {
     display: flex;
+    flex: 1;
     flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
     padding: 0 15px;
 }
@@ -281,27 +311,16 @@ nav a:hover {
     margin-bottom: 4px;
 }
 
-.hebergements-cards .card-subtitle {
-    margin: 0;
-    font-size: 14px;
-}
-
 .hebergements-cards .card-rating {
     display: flex;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 10px;
     height: 12px;
     align-items: center;
-    gap: 3px;
-}
-
-.section-subtitle {
-    margin-top: 30px;
 }
 
 .section-subtitle h3 {
     font-size: 18px;
-    margin: 0;
 }
 
 /****** Populaires ***********/
@@ -316,8 +335,7 @@ nav a:hover {
 }
 
 .populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
+    flex: 1;
 }
 
 .populaires-cards img {
@@ -341,10 +359,6 @@ nav a:hover {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
-
 .populaires-cards .card-rating {
     display: flex;
     height: 12px;
@@ -362,12 +376,6 @@ nav a:hover {
 .activities-title {
     display: flex;
     align-items: center;
-}
-
-.activities-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .activities-cards .card {
@@ -431,22 +439,11 @@ footer h3 {
     }
 
     .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         gap: 20px;
     }
 
     .populaires-cards a {
         width: 100%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 16px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 14px;
     }
 
     /****** fitlers ******/
@@ -498,10 +495,7 @@ footer h3 {
     .hebergements-and-populaires section {
         border-radius: 0px;
         padding: 30px 20px;
-    }
-
-    .section-subtitle {
-        margin-top: 15px;
+        gap: 15px;
     }
 
     /****** Populaires ******/
@@ -511,11 +505,6 @@ footer h3 {
 
     .populaires-cards {
         flex-direction: column;
-        margin-top: 15px;
-    }
-
-    .populaires-cards .card {
-        margin-top: 0;
     }
 
     /****** hebergements ******/
@@ -525,22 +514,11 @@ footer h3 {
 
     .hebergements-cards {
         flex-direction: column;
-        margin-top: 15px;
         gap: 15px;
     }
 
     .hebergements-cards .card {
-        margin: 0;
         width: calc(100% - 10px);
-    }
-
-    .hebergements-cards .card-title {
-        margin-top: 4px;
-    }
-
-    .hebergements-cards .card-rating {
-        margin-top: 4px;
-        margin-bottom: 10px;
     }
 
     /********** Header **********/
@@ -608,7 +586,7 @@ footer h3 {
     }
 
     .filters li {
-        flex: 1 0 30%;
+        flex: 1 0 33%;
     }
 
     .filters span {
@@ -620,7 +598,6 @@ footer h3 {
         padding: 30px 10px;
     }
     .activities-cards {
-        flex-direction: column;
         gap: 15px;
     }
 
