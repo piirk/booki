@@ -23,7 +23,6 @@ body {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;
 }
 
 main {
@@ -274,7 +273,6 @@ nav a:hover {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
@@ -305,7 +303,6 @@ nav a:hover {
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
     padding: 0 15px;
 }
 
@@ -355,7 +352,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
@@ -399,7 +395,6 @@ nav a:hover {
     display: flex;
     flex: 1;
     align-items: center;
-    box-sizing: border-box;
     padding: 0 20px;
 }
 
@@ -457,15 +452,12 @@ footer h3 {
     .filters {
         flex-direction: column;
         align-items: baseline;
+        gap: 20px;
     }
 
     .filters h2 {
         margin-right: 0;
         margin-bottom: 0;
-    }
-
-    .filters section {
-        margin-top: 20px;
     }
 
     .filters button {
