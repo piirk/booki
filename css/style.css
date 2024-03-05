@@ -197,12 +197,12 @@ nav a:hover {
 .filters {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .filters h2 {
     display: flex;
     font-size: 18px;
-    margin: 0 15px 0 0;
 }
 
 .filters section {
@@ -453,11 +453,6 @@ footer h3 {
         flex-direction: column;
         align-items: baseline;
         gap: 20px;
-    }
-
-    .filters h2 {
-        margin-right: 0;
-        margin-bottom: 0;
     }
 
     .filters button {
