@@ -205,7 +205,7 @@ nav a:hover {
     font-size: 18px;
 }
 
-.filters section {
+.filters div {
     display: flex;
     padding: 0;
     gap: 15px;
@@ -573,7 +573,7 @@ footer h3 {
     .filters {
         align-items: normal;
     }
-    .filters section {
+    .filters div {
         flex-wrap: wrap;
         gap: 20px 10px;
     }
